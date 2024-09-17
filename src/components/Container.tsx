@@ -120,16 +120,16 @@ export default function Container(props: ContainerProps) {
         <meta name="robots" content="follow, index" />
         <meta name="theme-color" content="#7B82FE" />
         <meta content={meta.description} name="description" />
-        {/* <meta
+        <meta
           property="og:url"
-          content={`https://www.wendoj.codes${router.asPath}`}
+          content={`https://samuelkhoo.vercel.app/${router.asPath}`}
         />
         <link
           rel="canonical"
-          href={`https://www.wendoj.codes${router.asPath}`}
-        /> */}
+          href={`https://samuelkhoo.vercel.app/${router.asPath}`}
+        />
         <meta property="og:type" content={meta.type} />
-        <meta property="og:site_name" content="WendoJ" />
+        <meta property="og:site_name" content="Samuel" />
         <meta property="og:description" content={meta.description} />
         <meta property="og:title" content={meta.title} />
         <meta property="og:image" content={meta.image} />
