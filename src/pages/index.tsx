@@ -9,11 +9,11 @@ import {
   Briefcase,
   School,
   HeartHandshake,
-  Phone,
   Github,
   LinkedinIcon,
   FileText,
 } from "lucide-react";
+import { TbCopy, TbCopyCheck} from "react-icons/tb";
 import { TriangleDownIcon } from "@radix-ui/react-icons";
 import Spline from "@splinetool/react-spline";
 import Link from "next/link";
@@ -32,6 +32,8 @@ import VanillaTilt from "vanilla-tilt";
 import { motion } from "framer-motion";
 import Experience from "@/components/Experiences";
 import Approach from "@/components/Approach";
+import MagicButton from "@/components/ui/magicButton";
+import animationData from "@/pages/confetti.json";
 
 const aboutStats = [
   { label: "Expected graduation year", value: "2026" },
@@ -120,10 +122,48 @@ const extras = [
 export default function Home() {
   const refScrollContainer = useRef(null);
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
-  const [showPhoneNumber, setShowPhoneNumber] = useState<boolean>(false);
+  const [copied, setCopied] = useState(false);
   const [carouselApi, setCarouselApi] = useState<CarouselApi | null>(null);
   const [current, setCurrent] = useState<number>(0);
   const [count, setCount] = useState<number>(0);
+
+  // const copyAnimationOptions = {
+  //   loop: copied,
+  //   autoplay: copied,
+  //   animationData: animationData,
+  //   rendererSettings: {
+  //     preserveAspectRatio: "xMidYMid slice",
+  //   },
+  // };
+
+  const handleCopy = async () => {
+    const text = "samuel.khoo22@imperial.ac.uk"
+
+    try {
+      await navigator.clipboard.writeText(text)
+      setCopied(true)
+    } catch (error) {
+      console.error("Copy failed", error)
+      setCopied(false)
+    }
+  };
+
+  // listener for the copy (not fully functional)
+  // useEffect(() => {
+  //   const handleClipboardCopy = (e: ClipboardEvent) => {
+  //     const clipboardText = e.clipboardData?.getData('text');
+  //     if (clipboardText && clipboardText !== "samuel.khoo22@imperial.ac.uk") {
+  //       setCopied(false);
+  //     }
+  //   };
+  //   // Add a listener to handle when any text is copied
+  //   document.addEventListener('copy', handleClipboardCopy);
+
+  //   // Cleanup listener when the component is unmounted
+  //   return () => {
+  //     document.removeEventListener('copy', handleClipboardCopy);
+  //   };
+  // }, []);
 
   // handle scroll
   useEffect(() => {
@@ -544,18 +584,13 @@ export default function Home() {
               I&apos;m currently available for 6-month placements or summer internships in 2025, in both software and hardware.
             </p>
             <div className="flex items-center justify-center mt-6 space-x-4">
-              <Link href="mailto:samuel.khoo22@imperial.ac.uk" passHref>
-                <Button>Get in touch</Button>
-              </Link>
-              <div
-                className={`group flex items-center cursor-pointer transition-transform duration-300 ${showPhoneNumber ? 'translate-x-2' : 'translate-x-0'} rounded-full p-3 bg-white border border-gray-300 shadow-md`}
-                onClick={() => setShowPhoneNumber(!showPhoneNumber)}
-              >
-                <Phone className="w-5 h-5 text-gray-700 group-hover:text-gray-500 transition-colors duration-300" />
-                {showPhoneNumber && (
-                  <span className="ml-2 text-gray-700">{`+447785581300`}</span>
-                )}
-              </div>
+              <MagicButton
+                title={copied ? "Email is Copied!" : "Copy my email address"}
+                icon={copied ? <TbCopyCheck /> : <TbCopy />}
+                position="left"
+                handleClick={handleCopy}
+                otherClasses="!bg-[#161A31]"
+              />
             </div>
           </div>
         </section>
