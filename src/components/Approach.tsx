@@ -12,9 +12,10 @@ const Approach = () => {
         <Card
           title="Planning & Strategy"
           icon={<AceternityIcon order="Phase 1" />}
-          des="We'll collaborate to map out your website's goals, target audience,
-          and key functionalities. We'll discuss things like site structure,
-          navigation, and content requirements."
+          des="I begin by scoping out the project, identifying key objectives and deliverables. Using
+           tools like JIRA to establish timelines and Slack for communication. Each subfeature or requirement is broken down 
+           into tickets or subtasks with realistic deadlines. Project and technical documentation will also be constructed 
+           at this point."
         >
           <CanvasRevealEffect
             animationSpeed={5.1}
@@ -22,11 +23,11 @@ const Approach = () => {
           />
         </Card>
         <Card
-          title="Development & Progress Update"
+          title="Development & Progress Updates"
           icon={<AceternityIcon order="Phase 2" />}
-          des="Once we agree on the plan, I cue my lofi playlist and dive into
-          coding. From initial sketches to polished code, I keep you updated
-          every step of the way."
+          des="Once a plan is made, I cue my lofi playlists and dive into coding, 
+          throughout the process, I provide regular progress updates and seek feedback on completed sections to ensure alignment. 
+          I also continously assess the project, identifying opportunities for enhancement and improvement!"
         >
           <CanvasRevealEffect
             animationSpeed={3}
@@ -39,11 +40,12 @@ const Approach = () => {
           />
         </Card>
         <Card
-          title="Development & Launch"
+          title="Evaluation & Changes"
           icon={<AceternityIcon order="Phase 3" />}
-          des="This is where the magic happens! Based on the approved design,
-          I'll translate everything into functional code, building your website
-          from the ground up."
+          des="I collaborate closely with managers and peers, incorporating feedback to refine the code and ensure 
+          it aligns with best practices for performance optimisation and user experience. These changes are guided by a focus on
+          code quality, scalability and intuitive design. This phase also includes a progressive rollout to ensure smooth
+          deployment and minimal disruption."
         >
           <CanvasRevealEffect
             animationSpeed={3}
