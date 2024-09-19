@@ -30,7 +30,7 @@ import {
 } from "@/components/ui/carousel";
 import VanillaTilt from "vanilla-tilt";
 import { motion } from "framer-motion";
-import Approach from "@/components/Approach";
+// import Approach from "@/components/Approach";
 import Experience from "@/components/Experiences";
 
 const aboutStats = [

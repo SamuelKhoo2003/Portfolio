@@ -52,7 +52,7 @@ const Experience = () => {
                 <h1 className="text-start text-xl text-white md:text-2xl font-bold">
                   {card.title}
                 </h1>
-                <p className="text-start text-white mt-3">
+                <p className="text-start text-muted-foreground mt-3">
                   {card.desc}
                 </p>
               </div>
