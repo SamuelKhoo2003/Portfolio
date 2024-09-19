@@ -33,7 +33,6 @@ import { motion } from "framer-motion";
 import Experience from "@/components/Experiences";
 import Approach from "@/components/Approach";
 import MagicButton from "@/components/ui/magicButton";
-import animationData from "@/pages/confetti.json";
 
 const aboutStats = [
   { label: "Expected graduation year", value: "2026" },
@@ -126,15 +125,6 @@ export default function Home() {
   const [carouselApi, setCarouselApi] = useState<CarouselApi | null>(null);
   const [current, setCurrent] = useState<number>(0);
   const [count, setCount] = useState<number>(0);
-
-  // const copyAnimationOptions = {
-  //   loop: copied,
-  //   autoplay: copied,
-  //   animationData: animationData,
-  //   rendererSettings: {
-  //     preserveAspectRatio: "xMidYMid slice",
-  //   },
-  // };
 
   const handleCopy = async () => {
     const text = "samuel.khoo22@imperial.ac.uk"
@@ -584,6 +574,7 @@ export default function Home() {
               I&apos;m currently available for 6-month placements or summer internships in 2025, in both software and hardware.
             </p>
             <div className="flex items-center justify-center mt-6 space-x-4">
+              {/* Could add confetti effect and custom animated background for future */}
               <MagicButton
                 title={copied ? "Email is Copied!" : "Copy my email address"}
                 icon={copied ? <TbCopyCheck /> : <TbCopy />}
