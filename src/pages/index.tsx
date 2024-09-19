@@ -30,8 +30,8 @@ import {
 } from "@/components/ui/carousel";
 import VanillaTilt from "vanilla-tilt";
 import { motion } from "framer-motion";
-// import Approach from "@/components/Approach";
 import Experience from "@/components/Experiences";
+import Approach from "@/components/Approach";
 
 const aboutStats = [
   { label: "Expected graduation year", value: "2026" },
@@ -421,7 +421,6 @@ export default function Home() {
 
         {/* Experiences */}
         <section id="experiences" data-scroll-section>
-          {/* Gradient */}
           <div className="relative isolate -z-10">
             <div
               className="absolute inset-x-0 -top-40 transform-gpu overflow-hidden blur-[100px] sm:-top-80 lg:-top-60"
@@ -444,14 +443,39 @@ export default function Home() {
               Shaping outcomes through practical work.
             </h2>
             <p className="mt-1.5 text-base tracking-tight text-muted-foreground xl:text-lg">
-              I&apos;ve collaborated with a diverse set of companies, refining a strong work approach along the way.
+              I&apos;ve collaborated with a diverse set of companies, honing my ability to thrive in dynamic and fast-paced environments.
             </p>
-
-            {/* Companies */}
             <Experience />
+          </div>
+        </section>
 
-            {/* Approach */}
-            {/* <Approach /> */}
+           {/* Work Approach */}
+           <section id="experiences" data-scroll-section>
+          <div className="relative isolate -z-10">
+            <div
+              className="absolute inset-x-0 -top-40 transform-gpu overflow-hidden blur-[100px] sm:-top-80 lg:-top-60"
+              aria-hidden="true"
+            >
+              <div
+                className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-primary via-primary to-secondary opacity-10 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+                style={{
+                  clipPath:
+                    "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
+                }}
+              />
+            </div>
+          </div>
+          <div data-scroll data-scroll-speed=".4" className="my-64">
+            <span className="text-gradient clash-grotesk text-sm font-semibold tracking-tighter">
+            ⚡Work Approach
+            </span>
+            <h2 className="mt-3 text-4xl font-semibold tracking-tight tracking-tighter xl:text-6xl">
+              An adaptive work philosophy.
+            </h2>
+            <p className="mt-1.5 text-base tracking-tight text-muted-foreground xl:text-lg">
+              I&apos;ve developed a versatile approach that adapts seamlessly to a range of evolving environments, with the core focus of delivery impactful results.
+            </p>
+            <Approach />
           </div>
         </section>
 
