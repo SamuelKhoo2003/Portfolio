@@ -42,6 +42,12 @@ const aboutStats = [
 
 const projects = [
   {
+    title: "AcAi",
+    description: "An academic research AI tool",
+    image: "/assets/acai.webp",
+    href: "https://github.com/SamuelKhoo2003/AcAi",
+  },
+  {
     title: "FPGA-Mario",
     description: "Real time race system powered by low-level hardware integration",
     image: "/assets/fpgakartv2.webp",
