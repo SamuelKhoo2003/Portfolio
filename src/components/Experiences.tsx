@@ -2,22 +2,30 @@ import React from "react";
 import { AnimatedButton } from "@/components/ui/animatedButton";
 
 export const workExperience = [
-    {
-      id: 1,
-      title: "Fullstack Engineering Intern",
-      desc: "Assisted in the development of a fitness app for both iOS & Android platforms using React Native.",
-      className: "md:col-span-2",
-      thumbnail: "/assets/runnatransparent.png",
-      url: "https://www.runna.com/",
-    },
-    {
-      id: 2,
-      title: "Software Engineering Intern",
-      desc: "Spearheaded the development of a web-based 3D viewer using Django and Javascript.",
-      className: "md:col-span-2",
-      thumbnail: "/assets/suncon-modified.png",
-      url: "https://www.sunwayconstruction.com.my/",
-    },
+  {
+    id: 1,
+    title: "Software Engineer Intern",
+    desc: "Independently developed and deployed internal security tools and customer tools within AWS IAM.",
+    className: "md:col-span-2",
+    thumbnail: "/assets/amazon-web-services.png",
+    url: "https://aws.amazon.com/",
+  },
+  {
+    id: 2,
+    title: "Fullstack Engineering Intern",
+    desc: "Assisted in the development of a fitness app for both iOS & Android platforms using React Native.",
+    className: "md:col-span-2",
+    thumbnail: "/assets/runnatransparent.png",
+    url: "https://www.runna.com/",
+  },
+  {
+    id: 3,
+    title: "Software Engineering Intern",
+    desc: "Spearheaded the development of a web-based 3D viewer using Django and Javascript.",
+    className: "md:col-span-2",
+    thumbnail: "/assets/suncon-modified.png",
+    url: "https://www.sunwayconstruction.com.my/",
+  },
 ]
 const Experience = () => {
   return (

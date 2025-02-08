@@ -37,7 +37,7 @@ import MagicButton from "@/components/ui/magicButton";
 const aboutStats = [
   { label: "Expected graduation year", value: "2026" },
   { label: "Predicted grade", value: "1st" },
-  { label: "Companies worked with", value: "2+" },
+  { label: "Companies worked with", value: "3+" },
 ];
 
 const projects = [
@@ -107,13 +107,13 @@ const extras = [
   {
     title: "Springs & Work Shadowing",
     description:
-      "JP-Morgan Technology Virtual Program - 2023\n ACCESSIA Work Shadowing Program - 2022",
+      "Maven Securities Insight Into Technology - 2024\n JP-Morgan Technology Virtual Program - 2023",
     icon: Briefcase,
   },
   {
     title: "Teaching",
     description:
-      "Imperial College Programming UTA - 2022-2024\n Private Tutor (CS & Maths) - 2022-2024",
+      "Imperial College Programming UTA - 2022-2025\n Private Tutor (CS & Maths) - 2022-2025",
     icon: School,
   },
   {
@@ -271,7 +271,7 @@ export default function Home() {
                 data-scroll-speed=".06"
                 className="mt-1 max-w-lg tracking-tight text-muted-foreground 2xl:text-xl"
               >
-                A computer engineering student at Imperial College London and aspiring software engineer interested in technology, design and finance.
+                A computer engineering student at Imperial College London and an aspiring software engineer interested in technology, design and finance.
               </p>
             </div>
             <span
@@ -351,10 +351,10 @@ export default function Home() {
             className="my-14 flex max-w-6xl flex-col justify-start space-y-10"
           >
             <h2 className="py-16 pb-2 text-3xl font-light leading-normal tracking-tighter text-foreground xl:text-[35px]">
-                I&apos;m a 3rd year Computer Engineering student based in London.
-                My interests span in both software and hardware with experience in full-stack development at both
-                startups and mid-sized companies. My skillset consists of <u>Python</u> & <u>C++</u> alongside <u>React</u>, <u>JavaScript</u>, <u>TypeScript</u>,
-                and cloud technologies like <u>AWS</u>. I&apos;ve been involved in various stages of product development from initial design to final delivery. I&apos;m passionate
+                I&apos;m a final year Computer Engineering student based in London.
+                My interests span in both software and hardware with experience in full-stack development within a range of professional environments. 
+                My skillset consists of <u>Python</u> & <u>C++</u> alongside <u>React</u>, <u>JavaScript</u>, <u>TypeScript</u>,
+                and cloud technologies like <u>AWS</u> and <u>GCP</u>. I&apos;ve been involved in various stages of product development from initial design to final delivery. I&apos;m passionate
                 about learning new technologies and thrive in adapting to different challenges. I enjoy collaborating with cross-functional teams to create 
                 effective, cutting-edge solutions.
             </h2>
@@ -555,9 +555,13 @@ export default function Home() {
                   <span className="text-lg tracking-tight text-foreground">
                     {extra.title}
                   </span>
-                  <span className="mt-2 tracking-tighter text-muted-foreground">
+                  {/* <span className="mt-2 tracking-tighter text-muted-foreground">
                     {extra.description}
-                  </span>
+                  </span> */}
+                  <div
+                    className="mt-2 tracking-tighter text-muted-foreground"
+                    dangerouslySetInnerHTML={{ __html: extra.description.replace(/\n/g, "<br />") }}
+                  />
                 </div>
               ))}
             </motion.div>
@@ -577,7 +581,7 @@ export default function Home() {
               <span className="text-gradient clash-grotesk">together.</span>
             </h2>
             <p className="mt-1.5 text-base tracking-tight text-muted-foreground xl:text-lg">
-              I&apos;m currently available for 6-month placements or summer internships in 2025, in both software and hardware.
+              I&apos;m currently available for software engineering graduate roles and summer internships in 2026.
             </p>
             <div className="flex items-center justify-center mt-6 space-x-4">
               {/* Could add confetti effect and custom animated background for future */}
