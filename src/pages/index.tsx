@@ -66,6 +66,12 @@ const projects = [
     href: "https://github.com/SamuelKhoo2003/SmartGrid",
   },
   {
+    title: "PetCare",
+    description: "Smart tracking & health monitoring for pets",
+    image: "/assets/petcare.webp",
+    href: "https://github.com/SamuelKhoo2003/PetCare",
+  },
+  {
     title: "Journify",
     description: "A modern take at journalling",
     image: "/assets/journify.webp",
