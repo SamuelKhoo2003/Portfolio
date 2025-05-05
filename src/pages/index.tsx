@@ -68,7 +68,7 @@ const projects = [
   {
     title: "PetCare",
     description: "Smart tracking & health monitoring for pets",
-    image: "/assets/petcare.webp",
+    image: "/assets/petcarev2.png",
     href: "https://github.com/SamuelKhoo2003/PetCare",
   },
   {
