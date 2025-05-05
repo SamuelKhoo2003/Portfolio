@@ -2,14 +2,14 @@ import React from "react";
 import { AnimatedButton } from "@/components/ui/animatedButton";
 
 export const workExperience = [
-  // {
-  //   id: 1,
-  //   title: "Software Engineer Intern",
-  //   desc: "Independently developed and deployed internal security tools and customer tools within AWS IAM.",
-  //   className: "md:col-span-2",
-  //   thumbnail: "/assets/amazon-web-services.png",
-  //   url: "https://aws.amazon.com/",
-  // },
+  {
+    id: 1,
+    title: "Software Engineer Intern",
+    desc: "Built and deployed ML models and MLOps pipelines within AWS IAM Data Plane for scalable identity analysis.",
+    className: "md:col-span-2",
+    thumbnail: "/assets/amazon-web-services.png",
+    url: "https://aws.amazon.com/",
+  },
   {
     id: 2,
     title: "Fullstack Engineering Intern",

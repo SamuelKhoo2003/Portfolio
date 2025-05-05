@@ -316,7 +316,7 @@ export default function Home() {
                   <LinkedinIcon className="w-5 h-5" /> {/* LinkedIn icon from lucide-react */}
                 </a>
                 <a
-                  href="/assets/samuelcv.pdf" // Replace with your actual CV file path
+                  href="/assets/samuelcv2025.pdf" // Replace with your actual CV file path
                   download="SamuelKhoo_CV.pdf" // The file name for the downloaded file
                   className="flex items-center justify-center w-10 h-10 bg-green-600 text-white rounded-full hover:bg-green-500"
                 >
