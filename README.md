@@ -1,7 +1,3 @@
-Certainly! Here's an updated version of your portfolio README with the note about code quality and potential refactoring:
-
----
-
 # My Personal Portfolio
 
 Welcome to my personal portfolio repository! 🎉
@@ -30,11 +26,3 @@ To view or modify the portfolio locally, follow these steps:
    ```bash
    git clone https://github.com/SamuelKhoo2003/Portfolio
    ```
-
-## Note on Code Quality
-
-⚠️ **Important**: The current codebase may have areas where the quality isn't up to the best standards. A refactor is definitely something to consider in the future, particularly to improve maintainability, structure, and performance.
-
----
-
-This note adds a friendly reminder about potential future improvements!
